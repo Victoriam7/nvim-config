@@ -1,0 +1,6 @@
+require('plugins')
+require('options')
+require('treesitter-config')
+require('lualine-config')
+require('bufferline-config')
+vim.cmd('colorscheme lucidus')
