@@ -1,7 +1,7 @@
 -- GENERAL OPTIONS
 ------------------
 
--- Define map as keymap function for continence 
+-- Define map as keymap function for convenience 
 local map = vim.api.nvim_set_keymap
 
 -- Set Leader
@@ -53,8 +53,10 @@ vim.o.expandtab = true
 vim.bo.expandtab = true
 
 -- Enable Spelling
-vim.o.spell = true
 map('n', '<leader>o', ':setlocal spell! spelllang=en_us<CR>', {noremap = true})
+
+-- Keybind for toggleing tree view
+map('n', '<leader>n', ':NvimTreeToggle<CR>', {noremap = true})
 
 -- Keybinds for moving between panes
 vim.cmd [[
