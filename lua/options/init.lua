@@ -7,6 +7,13 @@ local map = vim.api.nvim_set_keymap
 -- Set Leader
 vim.g.mapleader = ','
 
+-- Enable smartcase
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
+-- Enable text wrapping
+vim.o.textwidth = 80
+
 -- Enable filetype plugin
 vim.cmd('filetype plugin indent on')
 
@@ -64,6 +71,12 @@ vim.cmd [[
     map <C-j> <C-w>j
     map <C-k> <C-w>k
     map <C-l> <C-w>l
+]]
+
+-- Prevent accidental quiting with :q or :wq
+vim.cmd [[
+cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'q')<CR>
+cabbrev wq <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'wq')<CR>
 ]]
 
 -- LANGUAGE SPECIFIC OPTIONS
