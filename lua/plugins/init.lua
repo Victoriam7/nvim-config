@@ -10,17 +10,21 @@ return require('packer').startup(function()
 
   -- lualine
   use { 'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
   -- bufferline
   use {'akinsho/bufferline.nvim',
-    requires = 'kyazdani42/nvim-web-devicons'}
+    requires = 'nvim-tree/nvim-web-devicons'}
 
+  use { 'kyazdani42/nvim-web-devicons' }
   -- nvim-tree
-  use {'kyazdani42/nvim-tree.lua',
-    requires = { 'kyazdani42/nvim-web-devicons', },
-    config = function() require'nvim-tree'.setup {} end
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
   -- telescope
@@ -38,4 +42,7 @@ return require('packer').startup(function()
   use {'hrsh7th/nvim-cmp'}
   use {'hrsh7th/cmp-vsnip'}
   use {'hrsh7th/vim-vsnip'}
+
+  -- tokyonight
+  use {'folke/tokyonight.nvim'}
 end)
