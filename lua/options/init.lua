@@ -39,7 +39,13 @@ vim.bo.shiftwidth = 4
 vim.o.expandtab = true
 vim.bo.expandtab = true
 
+vim.o.mouse = ""
+
+-- Mapping
 map('n', '<leader>o', ':setlocal spell! spelllang=en_us<CR>', {noremap = true})
+
+map('n', '<leader>FF', ':FindFiles<CR>', {noremap = true})
+map('n', '<leader>ff', ':find ', {noremap = true})
 
 vim.cmd [[
 cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'q')<CR>

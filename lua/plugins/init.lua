@@ -19,6 +19,7 @@ return require('packer').startup(function()
     use {'hrsh7th/vim-vsnip'}
 
     use {'folke/tokyonight.nvim'}
-    use {'shaunsingh/solarized.nvim'}
+
+    use {'numToStr/Comment.nvim'}
 
 end)
