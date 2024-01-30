@@ -1,14 +1,17 @@
-vim.cmd[[
-set t_8f=[38;2;%lu;%lu;%lum        " set foreground color
-set t_8b=[48;2;%lu;%lu;%lum        " set background color
-colorscheme tokyonight-night
-set t_Co=256                         " Enable 256 colors
-set termguicolors                    " Enable GUI colors for the terminal to get truecolor
-]]
 require("tokyonight").setup({
     style = "night",
+    on_colors = function(colors)
+        colors.fg_gutter = "#707cb2"
+        colors.comment = "#709db2"
+        colors.dark5 = "#709db2"
+    end
 })
 
 --vim.opt.termguicolors = true
 vim.g.tokyonight_transparent_sidebar = true
 vim.g.tokyonight_transparent = true
+
+vim.cmd[[
+colorscheme tokyonight-night
+]]
+
