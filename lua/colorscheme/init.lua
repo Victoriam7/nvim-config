@@ -7,7 +7,9 @@ require("tokyonight").setup({
     end
 })
 
---vim.opt.termguicolors = true
+require'nvim-web-devicons'.setup{}
+
+vim.opt.termguicolors = true
 vim.g.tokyonight_transparent_sidebar = true
 vim.g.tokyonight_transparent = true
 
