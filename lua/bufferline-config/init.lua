@@ -7,6 +7,7 @@ bufferline.setup({
             style = 'underline',
         },
         close_icon = '',
+        modified_icon = '',
         max_name_length = 18,
         max_prefix_length = 15,
         truncate_names = true,

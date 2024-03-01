@@ -41,6 +41,7 @@ local kind_icons = {
 }
 
 cmp.setup({
+  preselect = cmp.PreselectMode.None,
   formatting = {
     format = function(entry, vim_item)
       -- Kind icons

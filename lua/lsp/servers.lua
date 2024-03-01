@@ -47,3 +47,5 @@ require'lspconfig'.lua_ls.setup {
     return true
   end
 }
+
+require'lspconfig'.golangci_lint_ls.setup{}
