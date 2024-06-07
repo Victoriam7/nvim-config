@@ -22,8 +22,14 @@ return require('packer').startup(function()
 
     use {'numToStr/Comment.nvim'}
 
-    use {'akinsho/bufferline.nvim', 
-        tag = "*", 
+    use {'akinsho/bufferline.nvim',
+        tag = "*",
     }
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons', 
+		},
+	}
 
 end)
