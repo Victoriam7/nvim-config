@@ -31,5 +31,9 @@ return require('packer').startup(function()
 			'nvim-tree/nvim-web-devicons', 
 		},
 	}
+	use {
+	   "m4xshen/hardtime.nvim",
+	   requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+	}
 
 end)
