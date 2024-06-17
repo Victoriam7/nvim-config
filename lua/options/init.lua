@@ -56,4 +56,4 @@ cabbrev wq <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'wq')<CR>
 
 -- LANGUAGE SPECIFIC OPTIONS
 ----------------------------
-vim.cmd('au FileType c,h,cpp,hpp setl shiftwidth=8 softtabstop=8 shiftwidth=8')
+vim.cmd('au FileType c,h,cpp,hpp setl shiftwidth=8 tabstop=8 shiftwidth=8')
