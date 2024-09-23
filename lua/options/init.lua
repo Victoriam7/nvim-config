@@ -47,6 +47,7 @@ map('n', '<leader>o', ':setlocal spell! spelllang=en_us<CR>', {noremap = true})
 
 map('n', '<leader>FF', ':FindFiles<CR>', {noremap = true})
 map('n', '<leader>ff', ':find ', {noremap = true})
+map('t', '<esc>', '<C-\\><C-n>', {noremap = true})
 
 vim.cmd [[
 cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'q')<CR>

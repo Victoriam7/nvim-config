@@ -36,4 +36,12 @@ return require('packer').startup(function()
 	   requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
 	}
 
+	use 'mfussenegger/nvim-dap'
+
+    use {
+		'mrcjkb/rustaceanvim',
+		version = '^5', -- Recommended
+	    lazy = false, -- This plugin is already lazy
+	}
+
 end)
