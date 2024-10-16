@@ -27,3 +27,6 @@ vim.cmd[[
 colorscheme tokyonight-night
 ]]
 
+vim.cmd [[
+    hi DiagnosticUnnecessary guifg=#8c9ca0 guibg=NONE gui=NONE
+]]
