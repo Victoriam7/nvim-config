@@ -40,4 +40,11 @@ return require('packer').startup(function()
 
     use 'simrat39/rust-tools.nvim'
 
+	use 'puremourning/vimspector'
+
+	use {
+	  'nvim-telescope/telescope.nvim', branch = '0.1.x',
+	  requires = { {'nvim-lua/plenary.nvim'} }
+	}
+
 end)
