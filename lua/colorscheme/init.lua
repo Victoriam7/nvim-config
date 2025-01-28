@@ -1,32 +1,28 @@
-require("tokyonight").setup({
-    style = "night",
-    on_colors = function(colors)
-        colors.fg_gutter = "#c2d3d7"
-        colors.comment = "#c2d3d7"
-        colors.dark5 = "#c2d3d7"
-    end,
-	transparent = true,
-	styles = {
-    -- Style to be applied to different syntax groups
-    -- Value is any valid attr-list value for `:help nvim_set_hl`
-    comments = { italic = true },
-    keywords = { italic = true },
-    -- Background styles. Can be "dark", "transparent" or "normal"
-    sidebars = "transparent", -- style for sidebars, see below
-    floats = "transparent", -- style for floating windows
-  },
-})
-
+vim.opt.termguicolors = true
 require'nvim-web-devicons'.setup{}
 
-vim.opt.termguicolors = true
-vim.g.tokyonight_transparent_sidebar = true
-vim.g.tokyonight_transparent = true
+require("cyberdream").setup({
+    transparent = true,
+    italic_comments = true,
+    hide_fillchars = false,
+    borderless_telescope = true,
+    terminal_colors = true,
+    cache = false,
+    theme = {
+        variant = "default",
+        saturation = 1,
+		highlights = {
+			Comment = { fg = "#c2d3d7", bg = "NONE", italic = true },
+			LineNr = { fg = "#ffffff", bg = "NONE", italic = false },
+			CursorLineNr = { fg = "#ffffff", bg = "NONE", italic = true },
+		}
+    },
 
-vim.cmd[[
-colorscheme tokyonight-night
-]]
+    extensions = {
+        telescope = true,
+        treesitter = true,
+        cmp = true,
+    },
+})
 
-vim.cmd [[
-    hi DiagnosticUnnecessary guifg=#8c9ca0 guibg=NONE gui=NONE
-]]
+vim.cmd("colorscheme cyberdream")
