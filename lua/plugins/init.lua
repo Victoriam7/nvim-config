@@ -49,4 +49,6 @@ return require('packer').startup(function()
 
 	use 'tpope/vim-dadbod'
 	use 'kristijanhusak/vim-dadbod-ui'
+
+	use "OXY2DEV/markview.nvim"
 end)
