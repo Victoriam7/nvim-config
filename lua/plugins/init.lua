@@ -38,7 +38,8 @@ return require('packer').startup(function()
 
 	use 'mfussenegger/nvim-dap'
 
-    use 'simrat39/rust-tools.nvim'
+    -- use 'simrat39/rust-tools.nvim'
+    use 'mrcjkb/rustaceanvim'
 
 	use 'puremourning/vimspector'
 
@@ -51,4 +52,6 @@ return require('packer').startup(function()
 	use 'kristijanhusak/vim-dadbod-ui'
 
 	use "OXY2DEV/markview.nvim"
+
+	use "chrisgrieser/nvim-lsp-endhints"
 end)
