@@ -54,4 +54,11 @@ return require('packer').startup(function()
 	use "OXY2DEV/markview.nvim"
 
 	use "chrisgrieser/nvim-lsp-endhints"
+
+	use {
+	  'greggh/claude-code.nvim',
+	  requires = {
+		'nvim-lua/plenary.nvim', -- Required for git operations
+	  },
+	}
 end)

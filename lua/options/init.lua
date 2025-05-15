@@ -64,6 +64,11 @@ map('n', '<leader>FF', ':FindFiles<CR>', {noremap = true})
 map('n', '<leader>ff', ':find ', {noremap = true})
 map('t', '<esc>', '<C-\\><C-n>', {noremap = true})
 
+map('n', '<C-h>', '<C-w>h', { noremap = true })
+map('n', '<C-j>', '<C-w>j', { noremap = true })
+map('n', '<C-k>', '<C-w>k', { noremap = true })
+map('n', '<C-l>', '<C-w>l', { noremap = true })
+
 vim.cmd [[
 cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'q')<CR>
 cabbrev wq <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'wq')<CR>
