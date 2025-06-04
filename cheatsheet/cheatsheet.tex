@@ -1,0 +1,90 @@
+\documentclass[10pt,landscape]{article}
+\usepackage[landscape]{geometry}
+\usepackage{multicol,multirow}
+\usepackage{ifthen}
+\usepackage{xpatch}
+\usepackage{xcolor}
+\usepackage{realboxes}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{datetime} 
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage[scale=0.98,ttdefault]{AnonymousPro}
+\usepackage[none]{hyphenat}
+
+\ifthenelse{\lengthtest { \paperwidth = 11in}}
+    { \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in} }
+	{\ifthenelse{ \lengthtest{ \paperwidth = 297mm}}
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+		{\geometry{top=1cm,left=1cm,right=1cm,bottom=1cm} }
+	}
+\pagestyle{empty}
+\makeatletter 
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%x
+                                {\normalfont\Large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {0.5ex plus .2ex}%
+                                {\normalfont\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\footnotesize\bfseries}}
+\renewcommand{\paragraph}{\@startsection{subsubsection}{3}{0mm}%
+                                {-1ex plus -.5ex minus -.2ex}%
+                                {1ex plus .2ex}%
+                                {\normalfont\scriptsize\bfseries}}
+\renewcommand{\familydefault}{\ttdefault}
+\makeatother
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt plus 0.5ex}
+
+\lstset{
+    basicstyle=\tiny
+}
+
+\mmddyydate
+\renewcommand{\dateseparator}{-}
+\pagestyle{fancy}
+\rhead{}
+\lhead{}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\footnotesize Version \today}
+
+\newcommand{\tablewidth}{30em}
+\setlength{\tabcolsep}{4pt}
+
+% -----------------------------------------------------------------------
+
+\title{Quick Guide to NeoVim}
+
+\begin{document}
+    \frenchspacing
+    \raggedright
+    \footnotesize
+
+    \begin{center}
+        \Large{\textbf{A Quick Guide to NeoVim}} \\
+    \end{center}
+    \begin{multicols}{3}
+        \setlength{\premulticols}{1pt}
+        \setlength{\postmulticols}{1pt}
+        \setlength{\multicolsep}{1pt}
+        \setlength{\columnsep}{2pt}
+
+        \input{basic.tex}
+        \input{buffers.tex}
+        % \input{lsp.tex}
+
+    \end{multicols}
+\end{document}

@@ -1,0 +1,80 @@
+\section{Basic}
+
+\subsection{Navigation}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		h, j, k, l & N & Move cursor left, down, up, right \\
+		w, b       & N & Move to next/previous word \\
+		e          & N & Move to end of word \\
+		0, \$      & N & Move to beginning/end of line \\
+		gg, G      & N & Move to first/last line \\
+		Ctrl+u/d   & N & Scroll half page up/down \\
+		Ctrl+b/f   & N & Scroll full page up/down \\
+		\{\}       & N & Move by paragraph \\
+		\%         & N & Jump to matching bracket \\
+	\end{tabularx}
+
+\subsection{Modes}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		i          & N & Insert mode (before cursor) \\
+		I          & N & Insert at beginning of line \\
+		a          & N & Insert mode (after cursor) \\
+		A          & N & Insert at end of line \\
+		o          & N & New line below and insert \\
+		O          & N & New line above and insert \\
+		v          & N & Visual mode \\
+		V          & N & Visual line mode \\
+		Ctrl+v     & N & Visual block mode \\
+		Esc        & * & Return to normal mode \\
+	\end{tabularx}
+
+\subsection{Editing}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		x          & N & Delete character under cursor \\
+		dd         & N & Delete current line \\
+		dw         & N & Delete word \\
+		d\$        & N & Delete to end of line \\
+		yy         & N & Copy current line \\
+		yw         & N & Copy word \\
+		p          & N & Paste after cursor \\
+		P          & N & Paste before cursor \\
+		u          & N & Undo \\
+		Ctrl+r     & N & Redo \\
+		.          & N & Repeat last command \\
+	\end{tabularx}
+
+\subsection{Search \& Replace}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		/text      & N & Search forward for 'text' \\
+		?text      & N & Search backward for 'text' \\
+		n          & N & Next search result \\
+		N          & N & Previous search result \\
+		*          & N & Search for word under cursor \\
+		:s/old/new & C & Replace first occurrence in line \\
+		:\%s/old/new/g & C & Replace all occurrences \\
+	\end{tabularx}
+
+\subsection{File Operations}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Command} & \emph{M} & \emph{Action} \\
+		:w             & C & Save file \\
+		:q             & C & Quit \\
+		:wq, :x        & C & Save and quit \\
+		:q!            & C & Quit without saving \\
+		:e filename    & C & Open file \\
+		:find file     & C & Find and open file \\
+	\end{tabularx}
+
+\subsection{Custom Mappings (Leader: ,)}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		,o         & N & Toggle spell check \\
+		,FF        & N & Find files (custom command) \\
+		,ff        & N & Find files (telescope) \\
+		,fg        & N & Live grep (telescope) \\
+		,fb        & N & Find buffers (telescope) \\
+		,fh        & N & Help tags (telescope) \\
+	\end{tabularx}

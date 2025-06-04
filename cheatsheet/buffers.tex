@@ -1,0 +1,54 @@
+\section{Buffers \& Windows}
+
+\subsection{Buffer Management}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		:ls, :buffers & C & List all buffers \\
+		:b \# & C & Switch to buffer by number \\
+		:b name & C & Switch to buffer by name \\
+		:bn, :bnext, ]b & C & Next buffer \\
+		:bp, :bprev, [b & C & Previous buffer \\
+		]B & C & Last buffer \\
+		[B & C & First buffer \\
+		:bd & C & Delete current buffer \\
+		:bw & C & Wipe buffer (remove from memory) \\
+		<leader>q & N & Close buffer (keep window) \\
+		<leader>fb & N & Find buffers (telescope) \\
+	\end{tabularx}
+
+\subsection{Window Management}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		Ctrl+h & N & Navigate to left window \\
+		Ctrl+j & N & Navigate to window below \\
+		Ctrl+k & N & Navigate to window above \\
+		Ctrl+l & N & Navigate to right window \\
+		Ctrl+w s & N & Split window horizontally \\
+		Ctrl+w v & N & Split window vertically \\
+		Ctrl+w q & N & Close current window \\
+		Ctrl+w o & N & Close all other windows \\
+		Ctrl+w = & N & Equalize window sizes \\
+		Ctrl+w + & N & Increase window height \\
+		Ctrl+w - & N & Decrease window height \\
+		Ctrl+w > & N & Increase window width \\
+		Ctrl+w < & N & Decrease window width \\
+	\end{tabularx}
+
+\subsection{Tabs}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		:tabnew & C & Create new tab \\
+		:tabc & C & Close current tab \\
+		:tabo & C & Close all other tabs \\
+		gt & N & Next tab \\
+		gT & N & Previous tab \\
+		\#gt & N & Go to tab number \# \\
+	\end{tabularx}
+
+\subsection{Terminal}
+	\begin{tabularx}{\tablewidth}{llX}
+		\emph{Key} & \emph{M} & \emph{Action} \\
+		:term & C & Open terminal in current window \\
+		Esc & T & Exit terminal mode to normal mode \\
+		Ctrl+\textbackslash Ctrl+n & T & Exit to normal mode (alternative) \\
+	\end{tabularx}
