@@ -39,7 +39,7 @@ return require('packer').startup(function()
 	use 'mfussenegger/nvim-dap'
 
     -- use 'simrat39/rust-tools.nvim'
-    use 'mrcjkb/rustaceanvim'
+    -- use 'mrcjkb/rustaceanvim'
 
 	use 'puremourning/vimspector'
 

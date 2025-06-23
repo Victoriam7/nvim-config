@@ -51,6 +51,6 @@ require'lspconfig'.lua_ls.setup {
 require'lspconfig'.gopls.setup{}
 
 -- Do not call with rustacian.nvim
--- require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.rust_analyzer.setup{}
 
 require'lspconfig'.gdscript.setup{}
