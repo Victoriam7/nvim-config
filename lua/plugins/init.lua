@@ -9,7 +9,9 @@ return require('packer').startup(function()
 
     use {'lukas-reineke/indent-blankline.nvim'}
 
-    use {'neovim/nvim-lspconfig'}
+    -- Note: nvim-lspconfig is now optional with Neovim 0.11+
+    -- You can remove this line if you're only using the native vim.lsp.config() API
+    -- use {'neovim/nvim-lspconfig'}
     use {'hrsh7th/cmp-nvim-lsp'}
     use {'hrsh7th/cmp-buffer'}
     use {'hrsh7th/cmp-path'}
