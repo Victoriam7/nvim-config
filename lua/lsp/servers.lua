@@ -92,7 +92,7 @@ vim.lsp.config('gopls', {
 vim.lsp.config('rust_analyzer', {
     cmd = { 'rust-analyzer' },
     filetypes = { 'rust' },
-    root_markers = { 'Cargo.toml', 'rust-project.json' },
+    root_markers = { '.git'},
     capabilities = capabilities,
     settings = {
         ['rust-analyzer'] = {
