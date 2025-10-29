@@ -9,9 +9,6 @@ return require('packer').startup(function()
 
     use {'lukas-reineke/indent-blankline.nvim'}
 
-    -- Note: nvim-lspconfig is now optional with Neovim 0.11+
-    -- You can remove this line if you're only using the native vim.lsp.config() API
-    -- use {'neovim/nvim-lspconfig'}
     use {'hrsh7th/cmp-nvim-lsp'}
     use {'hrsh7th/cmp-buffer'}
     use {'hrsh7th/cmp-path'}
@@ -58,11 +55,4 @@ return require('packer').startup(function()
 	use "OXY2DEV/markview.nvim"
 
 	use "chrisgrieser/nvim-lsp-endhints"
-
-	use {
-	  'greggh/claude-code.nvim',
-	  requires = {
-		'nvim-lua/plenary.nvim', -- Required for git operations
-	  },
-	}
 end)
