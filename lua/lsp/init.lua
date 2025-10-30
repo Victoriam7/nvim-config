@@ -28,8 +28,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 vim.diagnostic.config({
-	virtual_lines = true,
-    virtual_text = false,
+	virtual_lines = false,
+    virtual_text = true,
     signs = {
         text = {
             [vim.diagnostic.severity.ERROR] = '',
