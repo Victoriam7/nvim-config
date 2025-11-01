@@ -9,5 +9,6 @@ return {
 		checkOnSave = { command = false },
 		diagnostics = { enable = true },
 		rustfmt = { enable = true },
+		lru = { capacity = 44 }
 	},
 }
