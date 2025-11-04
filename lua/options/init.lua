@@ -20,6 +20,7 @@ vim.o.fileencoding = 'utf-8'
 vim.o.splitbelow = true
 vim.o.splitright = true
 
+vim.g.clipboard = "wl-copy"
 vim.o.clipboard = "unnamedplus"
 
 vim.o.scrolloff = 3
